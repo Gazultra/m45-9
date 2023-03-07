@@ -13,7 +13,7 @@ const hashPass = async (req, res, next) => {
     } catch (error) {
         res.status(501).json({errorMessage: error.message, error: error})
     }
-};
+};                          
 
 const comparePass = async  (req, res, next) => {
     try {
